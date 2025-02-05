@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+	<h1>See-N-Say Storymaker</h1>
+
+	<!-- Button to trigger student ID display -->
+    <button id="showStudentId">Show Student Info</button>
+    <p id="studentId"></p> <!-- Student ID will appear here -->
+
+	
+	<section>
+		<!-- Section with all the buttons for the user to build their story -->
+		<h2>Create Your Story</h2>
+        <button id="noun1">Noun 1</button>
+        <p id="choosenNoun1"></p>
+		<div id="noun1Image"></div> <!-- Placeholder for the image -->
+
+        <button id="verb">Verb</button>
+        <p id="choosenVerb"></p>
+		<div id="verbImage"></div> <!-- Placeholder for the image -->
+
+        <button id="adjective">Adjective</button>
+        <p id="choosenAdjective"></p>
+		<div id="adjectiveImage"></div> <!-- Placeholder for the image -->
+
+        <button id="noun2">Noun 2</button>
+        <p id="choosenNoun2"></p>
+		<div id="noun2Image"></div> <!-- Placeholder for the image -->
+
+        <button id="setting">Setting</button>
+        <p id="choosenSetting"></p>
+		<div id="settingImage"></div> <!-- Placeholder for the image -->
+
+	</section>
+	<section>
+		<!-- Section with playback controls to see or hear the story -->
+		<h2>See Your Story</h2>
+		<button id="playback">Show Story</button>
+		<button id="random">Random Story</button>
+		<!-- Empty paragraph to display the story -->
+		<button id="reset">Reset Story</button> <!-- Reset Button -->
+		<p id="story"></p>
+	</section>
+
+	<script src="js/storymaker.js"></script> 
+
+</body>
+
+</html>

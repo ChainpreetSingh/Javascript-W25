@@ -1,0 +1,156 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    padding: 20px;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Student ID Section */
+#studentId {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #16a085;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Section Styles */
+section {
+    margin: 30px auto;
+    max-width: 700px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    justify-content: center; /* Center buttons vertically */
+    text-align: center;
+}
+
+/* Header for sections */
+h2 {
+    font-size: 1.7rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Button Styles */
+button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    padding: 12px 25px;
+    margin: 12px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #1abc9c;
+    transform: scale(1.02);
+}
+
+#showStudentId {
+    display: block;
+    margin: 0 auto 20px; /* Centers the button horizontally and adds bottom margin */
+    background-color: #e67e22;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#showStudentId:hover {
+    background-color: #d35400;
+}
+
+#showStudentId:active {
+    background-color: #f39c12;
+}
+
+/* Paragraph styles for displaying selected words */
+p[id^="choosen"] {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2ecc71;
+    margin-top: 8px;
+}
+
+/* Story Output Style */
+#story {
+    font-size: 1.6rem;
+    color: #e74c3c;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+}
+
+/* Reset Button Style */
+#reset {
+    background-color: #e74c3c;
+}
+
+#reset:hover {
+    background-color: #c0392b;
+}
+
+#reset:active {
+    background-color: #d35400;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #story {
+        font-size: 1.4rem;
+    }
+}
